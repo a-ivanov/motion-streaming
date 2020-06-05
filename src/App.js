@@ -15,11 +15,11 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.eventSource.onmessage = e => this.updateCircle(JSON.parse(e.data));
+    this.eventSource.onmessage = e => this.updateCircleState(JSON.parse(e.data));
   }
 
-  updateCircle(newPos) {
-    this.setState({ position: newPos });
+  updateCircleState(newPosition) {
+    this.setState({ position: newPosition });
   }
 
   render() {
