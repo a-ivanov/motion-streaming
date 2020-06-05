@@ -25,7 +25,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <svg width="300" height="300" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <svg width="300" height="300" viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg">
           <Circle
             radius={10}
             x={this.state.position.x}

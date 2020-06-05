@@ -6,7 +6,7 @@ function deg2rad(degrees) {
 
 function* circle(radius) {
   let angle = 0;
-  let step = deg2rad(45);
+  let step = deg2rad(5);
 
   while (true) {
     let current = angle;
@@ -34,7 +34,7 @@ http
       });
       setInterval(() => {
         res.write(`data: ${JSON.stringify(coords.next().value)}\n\n`);
-      }, 2000);
+      }, 100);
     } else {
       res.writeHead(404);
       res.end();

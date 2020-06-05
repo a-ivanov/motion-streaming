@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+  border: 1px solid red;
+}
+.App svg{
+  border: 1px solid lightgray;
+  border-radius: 50%;
+}
+.App circle{
+  transition: .5s;
+}
